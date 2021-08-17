@@ -11,10 +11,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var count = 0;
+  var _count = 0;
 
-  void increment() {
-    count++;
+  void _increment() {
+    _count++;
     setState(() {});
   }
 
@@ -25,11 +25,11 @@ class _HomePageState extends State<HomePage> {
         title: Text("Contador"),
       ),
       body:
-          Center(child: Text("Contador\n$count", textAlign: TextAlign.center)),
+          Center(child: Text("Contador\n$_count", textAlign: TextAlign.center)),
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
           onPressed: () {
-            increment();
+            _increment();
           }),
     );
   }
