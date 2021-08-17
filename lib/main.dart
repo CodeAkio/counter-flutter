@@ -14,8 +14,9 @@ class _HomePageState extends State<HomePage> {
   var _count = 0;
 
   void _increment() {
-    _count++;
-    setState(() {});
+    setState(() {
+      _count++;
+    });
   }
 
   @override
